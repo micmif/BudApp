@@ -10,6 +10,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 
+import { NgCalendarModule } from 'ionic2-calendar';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -18,6 +20,7 @@ import { RegisterPage } from '../pages/register/register';
     RegisterPage
   ],
   imports: [
+    NgCalendarModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
   ],
