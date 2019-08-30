@@ -1,89 +1,18 @@
-<ion-header no-border>
-<!-- add hamburger menu -->
-  </ion-header>
-  
-  
-  <ion-content >
-    <ion-card>
-            <ion-item>
-                <ion-input type="text" placeholder="Create New Post"></ion-input>
-              </ion-item>
-    </ion-card>
-  
-    <ion-buttons end>
-        <button ion-button round color="lg">Post</button>
-    </ion-buttons> 
-  
-    <ion-card>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="/assets/imgs/icon.png">
-        </ion-avatar>
-        <h2>Michela Mifsud</h2>
-      </ion-item>
-    
-      <ion-card-content>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
-            sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.</p>
-      </ion-card-content>
-    
-      <ion-row>
-        <ion-col>
-          <button ion-button color="lg" clear small icon-start>
-            <ion-icon name='thumbs-up'></ion-icon>
-            Like
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-button color="lg" clear small icon-start>
-            <ion-icon name='text'></ion-icon>
-            Comment
-          </button>
-        </ion-col>
-        <ion-col align-self-center text-center>
-          <ion-note>
-            10 minutes ago
-          </ion-note>
-        </ion-col>
-      </ion-row>
-    
-    </ion-card>
-    
-    
-    <ion-card>
-        <ion-item>
-          <ion-avatar item-start>
-            <img src="/assets/imgs/icon.png">
-          </ion-avatar>
-          <h2>Andrew Tanti</h2>
-        </ion-item>
-      
-        <ion-card-content>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
-              sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.</p>
-        </ion-card-content>
-      
-        <ion-row>
-          <ion-col>
-            <button ion-button color="lg" clear small icon-start>
-              <ion-icon name='thumbs-up'></ion-icon>
-              Like
-            </button>
-          </ion-col>
-          <ion-col>
-            <button ion-button color="lg" clear small icon-start>
-              <ion-icon name='text'></ion-icon>
-              Comment
-            </button>
-          </ion-col>
-          <ion-col align-self-center text-center>
-            <ion-note>
-              15 minutes ago
-            </ion-note>
-          </ion-col>
-        </ion-row>
-      
-      </ion-card>
-    
-  </ion-content>
-  
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Ionic Menu Starter</h3>
+
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  </p>
+
+  <button ion-button secondary menuToggle>Toggle Menu</button>
+</ion-content>
