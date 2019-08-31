@@ -20,7 +20,7 @@ export class LoginPage {
     console.log("Username: "+this.email);
     console.log("Password: "+ this.password);
 
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(HomePage);
   }
 
   goRegister(){
