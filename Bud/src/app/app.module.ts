@@ -12,7 +12,7 @@ import { ViewNotePage } from '../pages/view-note/view-note';
 import { TasksPage } from '../pages/tasks/tasks';
 import { AddTaskPage } from '../pages/add-task/add-task';
 import { ViewTaskPage } from '../pages/view-task/view-task';
-
+import { RulesPage } from '../pages/rules/rules';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,6 +28,7 @@ import { TaskService } from '../providers/task-service/task-service';
     HomePage,
     LoginPage,
     RegisterPage,
+    RulesPage,
     NotesPage,
     AddNotePage,
     ViewNotePage,
@@ -48,6 +49,7 @@ import { TaskService } from '../providers/task-service/task-service';
     HomePage,
     LoginPage,
     RegisterPage,
+    RulesPage,
     NotesPage,
     AddNotePage,
     ViewNotePage,
