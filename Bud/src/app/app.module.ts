@@ -8,13 +8,19 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { NotesPage } from '../pages/notes/notes';
 import { AddNotePage } from '../pages/add-note/add-note';
+import { ViewNotePage } from '../pages/view-note/view-note';
+import { TasksPage } from '../pages/tasks/tasks';
+import { AddTaskPage } from '../pages/add-task/add-task';
+import { ViewTaskPage } from '../pages/view-task/view-task';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { NoteService } from '../providers/note-service/note-service';
 import { IonicStorageModule } from '@ionic/storage';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ViewNotePage } from '../pages/view-note/view-note';
+
+import { NoteService } from '../providers/note-service/note-service';
+import { TaskService } from '../providers/task-service/task-service';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,10 @@ import { ViewNotePage } from '../pages/view-note/view-note';
     RegisterPage,
     NotesPage,
     AddNotePage,
-    ViewNotePage
+    ViewNotePage,
+    TasksPage,
+    AddTaskPage,
+    ViewTaskPage
   ],
   imports: [
     BrowserModule,
@@ -41,13 +50,17 @@ import { ViewNotePage } from '../pages/view-note/view-note';
     RegisterPage,
     NotesPage,
     AddNotePage,
-    ViewNotePage
+    ViewNotePage,
+    TasksPage,
+    AddTaskPage,
+    ViewTaskPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     NoteService,
-  ]
+    TaskService
+    ]
 })
 export class AppModule {}
