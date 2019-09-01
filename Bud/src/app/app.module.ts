@@ -14,6 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { NoteService } from '../providers/note-service/note-service';
 import { IonicStorageModule } from '@ionic/storage';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ViewNotePage } from '../pages/view-note/view-note';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginPage,
     RegisterPage,
     NotesPage,
-    AddNotePage
+    AddNotePage,
+    ViewNotePage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginPage,
     RegisterPage,
     NotesPage,
-    AddNotePage
+    AddNotePage,
+    ViewNotePage
   ],
   providers: [
     StatusBar,
